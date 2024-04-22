@@ -25,6 +25,7 @@ customer_orders_summary as (
         sum(orders.tax_paid) as lifetime_tax_paid,
         sum(orders.order_total) as lifetime_spend
 
+    
     from orders
 
     group by 1
